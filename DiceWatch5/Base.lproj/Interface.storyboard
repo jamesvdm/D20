@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DiceWatch5" customModuleProvider="target">
                     <items>
-                        <button width="1" height="156" alignment="left" backgroundImage="d20_0" id="liM-DR-DTc">
+                        <button width="136" height="135" alignment="left" backgroundImage="d20_0" id="liM-DR-DTc">
                             <connections>
                                 <action selector="d20Button" destination="AgC-eL-Hgc" id="h8S-fQ-fgP"/>
                             </connections>

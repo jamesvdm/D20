@@ -10,9 +10,12 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    let die20:Dice = Dice(sides: 20, color: "red")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        d20.setImage(UIImage(named: die20.getSide(face: 0)), for: .normal)
         // Do any additional setup after loading the view from its nib.
     }
     @IBOutlet weak var d20: UIButton!
@@ -34,12 +37,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     @IBAction func d20Button(_ sender: Any) {
-        let d20Roll = String(arc4random_uniform(20))
-        d20.setImage(UIImage(named: "d20_\(d20Roll)"), for: .normal)
+        d20.setImage(UIImage(named: die20.rollImage()), for: .normal)
     }
     @IBAction func d4Button(_ sender: Any) {
-        let d4Roll = String(arc4random_uniform(4))
-        d4.setImage(UIImage(named: "d4_\(d4Roll)"), for: .normal)
     }
     
 

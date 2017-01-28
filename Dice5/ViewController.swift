@@ -9,23 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let die20:Dice = Dice(sides: 20, color: "red")
 
     @IBOutlet weak var d20: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     @IBAction func d20Tapped(_ sender: Any) {
-        let d20Roll = String(arc4random_uniform(20))
-        d20.setImage(UIImage(named: "d20_\(d20Roll)"), for: .normal)
-
+        d20.setImage(UIImage(named: die20.rollImage()), for: .normal)
     }
 
 }
