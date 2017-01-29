@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,12 +32,30 @@
                                     <action selector="d20Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeG-do-kfo"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="si2-eh-wvB">
+                                <rect key="frame" x="67" y="36" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d20_bg" translatesAutoresizingMaskIntoConstraints="NO" id="m2Z-40-6ZO">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d20_bump" translatesAutoresizingMaskIntoConstraints="NO" id="re2-af-uzc">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d20_outline" translatesAutoresizingMaskIntoConstraints="NO" id="oBp-U7-KVq">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dZL-i6-i4K" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4kK-f7-FzP"/>
+                            <constraint firstItem="R16-VH-OB4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="Fso-rG-XJo"/>
                             <constraint firstItem="R16-VH-OB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hvw-Ks-Msg"/>
-                            <constraint firstItem="R16-VH-OB4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="KbE-JL-V3n"/>
                             <constraint firstItem="R16-VH-OB4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g6C-iE-zFF"/>
                             <constraint firstItem="dZL-i6-i4K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tup-2o-hn4"/>
                             <constraint firstItem="R16-VH-OB4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-54" id="ufz-VM-XoU"/>
@@ -45,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="d20" destination="R16-VH-OB4" id="nBb-Eo-lZO"/>
+                        <outlet property="dieBackground" destination="m2Z-40-6ZO" id="Wqo-Lt-WYr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -55,5 +74,8 @@
     <resources>
         <image name="background2" width="900" height="1284"/>
         <image name="d20_0" width="112" height="112"/>
+        <image name="d20_bg" width="512" height="512"/>
+        <image name="d20_bump" width="512" height="512"/>
+        <image name="d20_outline" width="512" height="512"/>
     </resources>
 </document>
