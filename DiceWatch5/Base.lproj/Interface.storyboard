@@ -9,12 +9,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--D20-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DiceWatch5" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" userLabel="D20" customClass="InterfaceController" customModule="DiceWatch5" customModuleProvider="target">
                     <items>
-                        <button width="136" height="135" alignment="left" backgroundImage="d20_0" id="liM-DR-DTc">
+                        <button alignment="center" verticalAlignment="center" backgroundImage="d20_0" id="liM-DR-DTc">
                             <connections>
                                 <action selector="d20Button" destination="AgC-eL-Hgc" id="h8S-fQ-fgP"/>
                             </connections>
@@ -22,9 +22,101 @@
                     </items>
                     <connections>
                         <outlet property="d20" destination="liM-DR-DTc" id="KP3-iq-G8m"/>
+                        <segue destination="18z-eg-tKt" kind="relationship" relationship="nextPage" id="dnR-8d-I0l"/>
                     </connections>
                 </controller>
             </objects>
+        </scene>
+        <!--D4-->
+        <scene sceneID="ulf-HH-fNq">
+            <objects>
+                <controller id="18z-eg-tKt" userLabel="D4" customClass="InterfaceController" customModule="DiceWatch5_Extension">
+                    <items>
+                        <button alignment="center" verticalAlignment="center" backgroundImage="d4_0" id="BKS-wX-ZvO">
+                            <connections>
+                                <action selector="d4Button" destination="18z-eg-tKt" id="s3N-Y0-Wnl"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="d4" destination="BKS-wX-ZvO" id="ZuU-u5-Jes"/>
+                        <segue destination="Qey-CE-utG" kind="relationship" relationship="nextPage" id="TgB-7k-ue6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="346" y="135"/>
+        </scene>
+        <!--D10-->
+        <scene sceneID="gwd-29-9WH">
+            <objects>
+                <controller id="84b-dR-SsF" userLabel="D10" customClass="InterfaceController" customModule="DiceWatch5_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="D10" id="zKI-BP-HBg"/>
+                    </items>
+                    <connections>
+                        <segue destination="E8H-d7-IxA" kind="relationship" relationship="nextPage" id="0AA-hw-Te2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="350" y="411"/>
+        </scene>
+        <!--D12-->
+        <scene sceneID="sPo-wT-uZc">
+            <objects>
+                <controller id="E8H-d7-IxA" userLabel="D12" customClass="InterfaceController" customModule="DiceWatch5_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="D12" id="T82-sR-dnV"/>
+                    </items>
+                    <connections>
+                        <segue destination="eTC-JG-CgC" kind="relationship" relationship="nextPage" id="Gyr-fi-eo4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="590" y="415"/>
+        </scene>
+        <!--D00-->
+        <scene sceneID="Orm-jp-Ut4">
+            <objects>
+                <controller id="eTC-JG-CgC" userLabel="D00" customClass="InterfaceController" customModule="DiceWatch5_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="D00" id="BhV-bS-qT3"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="817" y="413"/>
+        </scene>
+        <!--D6-->
+        <scene sceneID="PD3-Wg-Mlr">
+            <objects>
+                <controller id="Qey-CE-utG" userLabel="D6" customClass="InterfaceController" customModule="DiceWatch5_Extension">
+                    <items>
+                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="d6_0" id="pzw-W2-I42">
+                            <connections>
+                                <action selector="d6Button" destination="Qey-CE-utG" id="4GU-Mh-W7l"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="d6" destination="pzw-W2-I42" id="NdH-0O-aFL"/>
+                        <segue destination="OMv-cl-2iR" kind="relationship" relationship="nextPage" id="00P-uP-dck"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="577" y="136"/>
+        </scene>
+        <!--D8-->
+        <scene sceneID="MIa-an-ggt">
+            <objects>
+                <controller id="OMv-cl-2iR" userLabel="D8" customClass="InterfaceController" customModule="DiceWatch5_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="D8" id="E6h-L2-u5f"/>
+                    </items>
+                    <connections>
+                        <segue destination="84b-dR-SsF" kind="relationship" relationship="nextPage" id="2Sp-Jf-M71"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="800" y="136"/>
         </scene>
     </scenes>
 </document>

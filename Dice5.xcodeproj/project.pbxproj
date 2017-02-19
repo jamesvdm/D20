@@ -16,10 +16,11 @@
 		1C3EBD571E39E6A6008BF505 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3EBD561E39E6A6008BF505 /* ExtensionDelegate.swift */; };
 		1C3EBD591E39E6A6008BF505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD581E39E6A6008BF505 /* Assets.xcassets */; };
 		1C3EBD5D1E39E6A6008BF505 /* DiceWatch5.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */; };
+		1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
+		1C8046241E59AC10007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8472571E38327100112A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472561E38327100112A53 /* AppDelegate.swift */; };
 		1C8472591E38327100112A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472581E38327100112A53 /* ViewController.swift */; };
 		1C84725C1E38327100112A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725A1E38327100112A53 /* Main.storyboard */; };
-		1C84725E1E38327100112A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8472611E38327100112A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725F1E38327100112A53 /* LaunchScreen.storyboard */; };
 		1C84726C1E38327100112A53 /* Dice5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84726B1E38327100112A53 /* Dice5Tests.swift */; };
 		1C8472771E38327100112A53 /* Dice5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472761E38327100112A53 /* Dice5UITests.swift */; };
@@ -27,7 +28,6 @@
 		1C84728E1E38328800112A53 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84728D1E38328800112A53 /* TodayViewController.swift */; };
 		1C8472911E38328800112A53 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84728F1E38328800112A53 /* MainInterface.storyboard */; };
 		1C8472951E38328800112A53 /* Dice5Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C8472881E38328800112A53 /* Dice5Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1C84729A1E38359D00112A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -474,7 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8472611E38327100112A53 /* LaunchScreen.storyboard in Resources */,
-				1C84725E1E38327100112A53 /* Assets.xcassets in Resources */,
+				1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */,
 				1C84725C1E38327100112A53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,7 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C84729A1E38359D00112A53 /* Assets.xcassets in Resources */,
+				1C8046241E59AC10007177F3 /* Assets.xcassets in Resources */,
 				1C8472911E38328800112A53 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

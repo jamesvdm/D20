@@ -13,6 +13,8 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var d20: WKInterfaceButton!
+    @IBOutlet var d6: WKInterfaceButton!
+    @IBOutlet var d4: WKInterfaceButton!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -32,6 +34,17 @@ class InterfaceController: WKInterfaceController {
     @IBAction func d20Button() {
         let d20Roll = String(arc4random_uniform(20))
         d20.setBackgroundImageNamed("d20_\(d20Roll)")
+    }
+   
+    @IBAction func d6Button() {
+        let d6Roll = String(arc4random_uniform(6))
+        d6.setBackgroundImageNamed("d6_\(d6Roll)")
+    }
+
+    @IBAction func d4Button() {
+        let d4Roll = String(arc4random_uniform(4))
+        d4.setBackgroundImageNamed("d4_\(d4Roll)")
+
     }
 
 }

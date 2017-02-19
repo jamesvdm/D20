@@ -27,7 +27,7 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "Icon-App-29x29@2x-2.png",
+      "filename" : "Icon-App-29x29@3x-1.png",
       "scale" : "3x"
     },
     {
@@ -217,14 +217,6 @@
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
-    },
-    {
-      "filename" : "Icon-App-60x60@1x.png",
-      "unassigned" : true
-    },
-    {
-      "filename" : "Icon-App-76x76@3x.png",
-      "unassigned" : true
     }
   ],
   "info" : {
