@@ -12,6 +12,8 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     let die20:Dice = Dice(sides: 20, color: "red")
+    let die4:Dice = Dice(sides: 3, color: "red")
+    let die6:Dice = Dice(sides: 6, color: "red")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     @IBOutlet weak var d20: UIButton!
     @IBOutlet weak var d4: UIButton!
+    @IBOutlet weak var d6: UIButton!
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,9 +43,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBAction func d20Button(_ sender: Any) {
         d20.setImage(UIImage(named: die20.rollImage()), for: .normal)
     }
-    @IBAction func d4Button(_ sender: Any) {
+
+    @IBAction func d4Tapped(_ sender: Any) {
+           d4.setImage(UIImage(named: die4.rollImage()), for: .normal)
     }
     
+    @IBAction func d6Tapped(_ sender: Any) {
+            d6.setImage(UIImage(named: die6.rollImage()), for: .normal)
+    }
 
     
 }

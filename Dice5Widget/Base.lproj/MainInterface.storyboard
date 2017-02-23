@@ -22,16 +22,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-4i-pKS" userLabel="d20">
-                                <rect key="frame" x="104" y="-6" width="112" height="112"/>
+                                <rect key="frame" x="16" y="4" width="82" height="92"/>
                                 <state key="normal" image="d20_0"/>
                                 <connections>
                                     <action selector="d20Button:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="XxB-Hh-vTx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-7O-uDf">
+                                <rect key="frame" x="224" y="20" width="114" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="d6_0"/>
+                                <connections>
+                                    <action selector="d6Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="azi-gc-nke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-13-ZIj">
+                                <rect key="frame" x="121" y="15" width="79" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="d4_0"/>
+                                <connections>
+                                    <action selector="d4Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="LdL-no-u64"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="SsU-4i-pKS" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="kwr-so-uXn"/>
-                            <constraint firstItem="SsU-4i-pKS" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="raS-ha-yt4"/>
+                            <constraint firstItem="SsU-4i-pKS" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" constant="-103" id="raS-ha-yt4"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -42,6 +58,8 @@
                     <size key="freeformSize" width="320" height="100"/>
                     <connections>
                         <outlet property="d20" destination="SsU-4i-pKS" id="nJK-F3-YPf"/>
+                        <outlet property="d4" destination="rIq-13-ZIj" id="UBx-Ju-KYk"/>
+                        <outlet property="d6" destination="Dqj-7O-uDf" id="ZdG-57-zvC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,6 +68,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="d20_0" width="112" height="112"/>
+        <image name="d20_0" width="82" height="92"/>
+        <image name="d4_0" width="77" height="69"/>
+        <image name="d6_0" width="60" height="60"/>
     </resources>
 </document>
