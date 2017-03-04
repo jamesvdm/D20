@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,36 +18,58 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-4i-pKS" userLabel="d20">
-                                <rect key="frame" x="16" y="4" width="82" height="92"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-4i-pKS" userLabel="d20">
+                                <rect key="frame" x="16" y="8" width="82" height="92"/>
                                 <state key="normal" image="d20_0"/>
                                 <connections>
                                     <action selector="d20Button:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="XxB-Hh-vTx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-7O-uDf">
-                                <rect key="frame" x="224" y="20" width="114" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="d6_0"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-7O-uDf">
+                                <rect key="frame" x="229" y="24" width="60" height="60"/>
+                                <state key="normal" image="d6_0"/>
                                 <connections>
                                     <action selector="d6Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="azi-gc-nke"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-13-ZIj">
-                                <rect key="frame" x="121" y="15" width="79" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="d4_0"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-13-ZIj">
+                                <rect key="frame" x="122" y="20" width="77" height="69"/>
+                                <state key="normal" image="d4_0"/>
                                 <connections>
                                     <action selector="d4Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="LdL-no-u64"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-MH-Lk9">
+                                <rect key="frame" x="75" y="115" width="77" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="d10_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-Z3-7Sy">
+                                <rect key="frame" x="158" y="106" width="75" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="d12_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQq-1W-vof">
+                                <rect key="frame" x="236" y="112" width="77" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="d100_0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW3-nn-WXL">
+                                <rect key="frame" x="6" y="108" width="67" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="d8_0"/>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="SsU-4i-pKS" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="kwr-so-uXn"/>
-                            <constraint firstItem="SsU-4i-pKS" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" constant="-103" id="raS-ha-yt4"/>
+                            <constraint firstItem="SsU-4i-pKS" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="1uD-dU-iiC"/>
+                            <constraint firstItem="Dqj-7O-uDf" firstAttribute="leading" secondItem="rIq-13-ZIj" secondAttribute="trailing" constant="30" id="GfA-pg-S9d"/>
+                            <constraint firstItem="Dqj-7O-uDf" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="HiD-Cj-cV3"/>
+                            <constraint firstItem="rIq-13-ZIj" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="MeS-Np-i8a"/>
+                            <constraint firstItem="rIq-13-ZIj" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="kUx-h8-ySz"/>
+                            <constraint firstItem="rIq-13-ZIj" firstAttribute="leading" secondItem="SsU-4i-pKS" secondAttribute="trailing" constant="30" id="rT9-gN-7hl"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -55,7 +77,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="100"/>
+                    <size key="freeformSize" width="320" height="200"/>
                     <connections>
                         <outlet property="d20" destination="SsU-4i-pKS" id="nJK-F3-YPf"/>
                         <outlet property="d4" destination="rIq-13-ZIj" id="UBx-Ju-KYk"/>
@@ -64,12 +86,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.600000000000001" y="41.379310344827587"/>
+            <point key="canvasLocation" x="31.875" y="41.197183098591552"/>
         </scene>
     </scenes>
     <resources>
+        <image name="d100_0" width="84" height="74"/>
+        <image name="d10_0" width="85" height="70"/>
+        <image name="d12_0" width="85" height="86"/>
         <image name="d20_0" width="82" height="92"/>
         <image name="d4_0" width="77" height="69"/>
         <image name="d6_0" width="60" height="60"/>
+        <image name="d8_0" width="71" height="76"/>
     </resources>
 </document>

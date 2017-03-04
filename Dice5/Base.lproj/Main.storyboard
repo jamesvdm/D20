@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,87 +18,72 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="AoY-R2-mz3">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R16-VH-OB4" userLabel="d20">
-                                <rect key="frame" x="132.5" y="50" width="110" height="106"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="eHF-ch-OUI"/>
-                                    <constraint firstAttribute="height" constant="106" id="gaq-4I-0YG"/>
-                                </constraints>
-                                <state key="normal" image="d20_0"/>
-                                <connections>
-                                    <action selector="d20Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeG-do-kfo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-ue-KBh" userLabel="d4">
-                                <rect key="frame" x="65" y="196" width="85" height="69"/>
-                                <state key="normal" image="d4_0"/>
-                                <connections>
-                                    <action selector="d4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gH-Vr-nmK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgI-JW-Xce" userLabel="d8">
-                                <rect key="frame" x="65" y="318" width="85" height="76"/>
-                                <state key="normal" image="d8_0"/>
-                                <connections>
-                                    <action selector="d8Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBT-Ap-gHU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-Bq-OYK" userLabel="d12">
-                                <rect key="frame" x="65" y="446" width="85" height="86"/>
-                                <state key="normal" image="d12_0"/>
-                                <connections>
-                                    <action selector="d12Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBe-cD-4ho"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlO-y1-Xxk" userLabel="d6">
-                                <rect key="frame" x="263" y="200" width="60" height="60"/>
-                                <state key="normal" image="d6_0"/>
-                                <connections>
-                                    <action selector="d6Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTT-yW-plZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNC-jO-7pf" userLabel="d10">
-                                <rect key="frame" x="235" y="321" width="117" height="70"/>
-                                <state key="normal" image="d10_0"/>
-                                <connections>
-                                    <action selector="d10Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKA-b3-wiq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH1-YR-gMD" userLabel="d100">
-                                <rect key="frame" x="233" y="452" width="119" height="74"/>
-                                <state key="normal" image="d100_0"/>
-                                <connections>
-                                    <action selector="d100Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arB-ZR-IQn"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-Ga-3mx">
+                                <rect key="frame" x="117.5" y="5" width="85" height="557"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R16-VH-OB4" userLabel="d20">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="92"/>
+                                        <state key="normal" image="d20_0"/>
+                                        <connections>
+                                            <action selector="d20Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeG-do-kfo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlO-y1-Xxk" userLabel="d6">
+                                        <rect key="frame" x="0.0" y="97" width="85" height="60"/>
+                                        <state key="normal" image="d6_0"/>
+                                        <connections>
+                                            <action selector="d6Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTT-yW-plZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-ue-KBh" userLabel="d4">
+                                        <rect key="frame" x="0.0" y="162" width="85" height="69"/>
+                                        <state key="normal" image="d4_0"/>
+                                        <connections>
+                                            <action selector="d4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gH-Vr-nmK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgI-JW-Xce" userLabel="d8">
+                                        <rect key="frame" x="0.0" y="236" width="85" height="76"/>
+                                        <state key="normal" image="d8_0"/>
+                                        <connections>
+                                            <action selector="d8Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBT-Ap-gHU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNC-jO-7pf" userLabel="d10">
+                                        <rect key="frame" x="0.0" y="317" width="85" height="70"/>
+                                        <state key="normal" image="d10_0"/>
+                                        <connections>
+                                            <action selector="d10Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKA-b3-wiq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-Bq-OYK" userLabel="d12">
+                                        <rect key="frame" x="0.0" y="392" width="85" height="86"/>
+                                        <state key="normal" image="d12_0"/>
+                                        <connections>
+                                            <action selector="d12Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBe-cD-4ho"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH1-YR-gMD" userLabel="d100">
+                                        <rect key="frame" x="0.0" y="483" width="85" height="74"/>
+                                        <state key="normal" image="d100_0"/>
+                                        <connections>
+                                            <action selector="d100Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arB-ZR-IQn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vVH-ue-KBh" firstAttribute="top" secondItem="R16-VH-OB4" secondAttribute="bottom" constant="40" id="0Cf-ES-3rC"/>
-                            <constraint firstItem="rqY-Bq-OYK" firstAttribute="top" secondItem="EgI-JW-Xce" secondAttribute="bottom" constant="52" id="2uP-og-Scm"/>
-                            <constraint firstItem="rqY-Bq-OYK" firstAttribute="baseline" secondItem="jH1-YR-gMD" secondAttribute="baseline" constant="6" id="5Zp-TD-3dz"/>
-                            <constraint firstItem="HlO-y1-Xxk" firstAttribute="leading" secondItem="gNC-jO-7pf" secondAttribute="leading" constant="28" id="DAm-OY-IJX"/>
-                            <constraint firstItem="EgI-JW-Xce" firstAttribute="trailing" secondItem="rqY-Bq-OYK" secondAttribute="trailing" id="FH1-Oy-kxm"/>
-                            <constraint firstItem="R16-VH-OB4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Hzt-Bc-2Tb"/>
-                            <constraint firstItem="R16-VH-OB4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NhE-M0-yg2"/>
-                            <constraint firstItem="EgI-JW-Xce" firstAttribute="leading" secondItem="rqY-Bq-OYK" secondAttribute="leading" id="PgU-aT-URz"/>
-                            <constraint firstItem="EgI-JW-Xce" firstAttribute="top" secondItem="vVH-ue-KBh" secondAttribute="bottom" constant="53" id="VAm-QK-Kph"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HlO-y1-Xxk" secondAttribute="trailing" constant="36" id="VLl-EV-jw4"/>
-                            <constraint firstItem="gNC-jO-7pf" firstAttribute="trailing" secondItem="jH1-YR-gMD" secondAttribute="trailing" id="WAM-6I-ip7"/>
-                            <constraint firstItem="vVH-ue-KBh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="49" id="Wgl-ul-ou2"/>
-                            <constraint firstItem="gNC-jO-7pf" firstAttribute="leading" secondItem="jH1-YR-gMD" secondAttribute="leading" constant="2" id="axy-dM-7eA"/>
-                            <constraint firstItem="vVH-ue-KBh" firstAttribute="trailing" secondItem="EgI-JW-Xce" secondAttribute="trailing" id="azi-4m-bTP"/>
-                            <constraint firstItem="vVH-ue-KBh" firstAttribute="baseline" secondItem="HlO-y1-Xxk" secondAttribute="baseline" constant="5" id="ext-pU-fga" userLabel="D4.baseline = D6.baseline"/>
-                            <constraint firstItem="HlO-y1-Xxk" firstAttribute="trailing" secondItem="gNC-jO-7pf" secondAttribute="trailing" constant="-29" id="jrw-5U-NBU"/>
-                            <constraint firstItem="vVH-ue-KBh" firstAttribute="leading" secondItem="EgI-JW-Xce" secondAttribute="leading" id="oku-Mn-Vha"/>
-                            <constraint firstItem="EgI-JW-Xce" firstAttribute="baseline" secondItem="gNC-jO-7pf" secondAttribute="baseline" constant="3" id="pri-Or-i1p"/>
+                            <constraint firstItem="gqI-Ga-3mx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMS-gi-Jaq"/>
+                            <constraint firstItem="gqI-Ga-3mx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g9M-2e-VSb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -114,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.640624999999996" y="39.97071742313323"/>
+            <point key="canvasLocation" x="30" y="39.08450704225352"/>
         </scene>
     </scenes>
     <resources>

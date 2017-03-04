@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" userLabel="D20" customClass="InterfaceController" customModule="DiceWatch5" customModuleProvider="target">
                     <items>
-                        <button alignment="center" verticalAlignment="center" backgroundImage="d20_0" id="liM-DR-DTc">
+                        <button width="112" height="122" alignment="center" verticalAlignment="center" backgroundImage="d20_0" id="liM-DR-DTc">
                             <connections>
                                 <action selector="d20Button" destination="AgC-eL-Hgc" id="h8S-fQ-fgP"/>
                             </connections>
@@ -32,7 +32,7 @@
             <objects>
                 <controller id="18z-eg-tKt" userLabel="D4" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button alignment="center" verticalAlignment="center" backgroundImage="d4_0" id="BKS-wX-ZvO">
+                        <button width="112" height="101" alignment="center" verticalAlignment="center" backgroundImage="d4_0" id="BKS-wX-ZvO">
                             <connections>
                                 <action selector="d4Button" destination="18z-eg-tKt" id="s3N-Y0-Wnl"/>
                             </connections>
@@ -51,9 +51,14 @@
             <objects>
                 <controller id="84b-dR-SsF" userLabel="D10" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="1" alignment="left" title="D10" id="zKI-BP-HBg"/>
+                        <button width="120" height="95" alignment="center" verticalAlignment="center" backgroundImage="d10_0" id="zKI-BP-HBg">
+                            <connections>
+                                <action selector="d10Button" destination="84b-dR-SsF" id="VRh-CS-hiN"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="d10" destination="zKI-BP-HBg" id="yiw-u8-5Zk"/>
                         <segue destination="E8H-d7-IxA" kind="relationship" relationship="nextPage" id="0AA-hw-Te2"/>
                     </connections>
                 </controller>
@@ -65,9 +70,14 @@
             <objects>
                 <controller id="E8H-d7-IxA" userLabel="D12" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="1" alignment="left" title="D12" id="T82-sR-dnV"/>
+                        <button width="108" height="113" alignment="center" verticalAlignment="center" backgroundImage="d12_0" id="T82-sR-dnV">
+                            <connections>
+                                <action selector="d12Button" destination="E8H-d7-IxA" id="5DI-1i-ztw"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="d12" destination="T82-sR-dnV" id="b5U-oY-dkM"/>
                         <segue destination="eTC-JG-CgC" kind="relationship" relationship="nextPage" id="Gyr-fi-eo4"/>
                     </connections>
                 </controller>
@@ -79,8 +89,15 @@
             <objects>
                 <controller id="eTC-JG-CgC" userLabel="D00" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="1" alignment="left" title="D00" id="BhV-bS-qT3"/>
+                        <button width="120" height="95" alignment="center" verticalAlignment="center" backgroundImage="d100_0" id="BhV-bS-qT3">
+                            <connections>
+                                <action selector="d100Button" destination="eTC-JG-CgC" id="fDk-SC-GH0"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="d100" destination="BhV-bS-qT3" id="6qZ-YA-ek0"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="817" y="413"/>
@@ -109,9 +126,14 @@
             <objects>
                 <controller id="OMv-cl-2iR" userLabel="D8" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="1" alignment="left" title="D8" id="E6h-L2-u5f"/>
+                        <button width="110" height="107" alignment="center" verticalAlignment="center" backgroundImage="d8_0" id="E6h-L2-u5f">
+                            <connections>
+                                <action selector="d8Button" destination="OMv-cl-2iR" id="Ut1-mt-Y2f"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="d8" destination="E6h-L2-u5f" id="f3j-7C-2Ne"/>
                         <segue destination="84b-dR-SsF" kind="relationship" relationship="nextPage" id="2Sp-Jf-M71"/>
                     </connections>
                 </controller>

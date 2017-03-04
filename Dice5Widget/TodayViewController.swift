@@ -12,14 +12,25 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
     
     let die20:Dice = Dice(sides: 20, color: "red")
-    let die4:Dice = Dice(sides: 3, color: "red")
+    let die4:Dice = Dice(sides: 4, color: "red")
     let die6:Dice = Dice(sides: 6, color: "red")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         d20.setImage(UIImage(named: die20.getSide(face: 0)), for: .normal)
+        self.extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
         // Do any additional setup after loading the view from its nib.
     }
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize){
+        if (activeDisplayMode == NCWidgetDisplayMode.compact) {
+            self.preferredContentSize = maxSize;
+        }
+        else {
+            self.preferredContentSize = CGSize(width: 0, height: 200);
+        }
+    }
+    
     @IBOutlet weak var d20: UIButton!
     @IBOutlet weak var d4: UIButton!
     @IBOutlet weak var d6: UIButton!

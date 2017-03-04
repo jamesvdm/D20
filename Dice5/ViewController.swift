@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func d100Tapped(_ sender: Any) {
-        d100.setImage(UIImage(named: die100.rollImage()), for: .normal)
+        let d100Roll = String(arc4random_uniform(10))
+        d100.setImage(UIImage(named: "d100_\(d100Roll)"), for: .normal)
     }
 }

@@ -16,6 +16,8 @@
 		1C3EBD571E39E6A6008BF505 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3EBD561E39E6A6008BF505 /* ExtensionDelegate.swift */; };
 		1C3EBD591E39E6A6008BF505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD581E39E6A6008BF505 /* Assets.xcassets */; };
 		1C3EBD5D1E39E6A6008BF505 /* DiceWatch5.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */; };
+		1C62AE0C1E5E9027002D77BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
+		1C62AE0D1E5E9028002D77BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8046241E59AC10007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8472571E38327100112A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472561E38327100112A53 /* AppDelegate.swift */; };
@@ -483,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C62AE0C1E5E9027002D77BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C62AE0D1E5E9028002D77BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +627,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				IBSC_MODULE = DiceWatch5_Extension;
 				INFOPLIST_FILE = DiceWatch5/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -641,7 +645,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				IBSC_MODULE = DiceWatch5_Extension;
 				INFOPLIST_FILE = DiceWatch5/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -658,7 +662,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = "DiceWatch5 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -675,7 +679,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = "DiceWatch5 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -786,7 +790,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = Dice5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -800,7 +804,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = Dice5/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -814,7 +818,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = Dice5Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.Dice5Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dice5.app/Dice5";
@@ -829,7 +833,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = Dice5Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5Tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.Dice5Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dice5.app/Dice5";
@@ -870,7 +874,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = Dice5Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5.Dice5Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.Dice5Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -883,7 +887,7 @@
 				DEVELOPMENT_TEAM = S87LZ337RB;
 				INFOPLIST_FILE = Dice5Widget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.Dice5.Dice5Widget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.Dice5Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
