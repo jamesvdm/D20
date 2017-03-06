@@ -30,6 +30,8 @@
 		1C84728E1E38328800112A53 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84728D1E38328800112A53 /* TodayViewController.swift */; };
 		1C8472911E38328800112A53 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84728F1E38328800112A53 /* MainInterface.storyboard */; };
 		1C8472951E38328800112A53 /* Dice5Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C8472881E38328800112A53 /* Dice5Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CF8044F1E6D44AE00FA0878 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8044E1E6D44AE00FA0878 /* Stickers.xcassets */; };
+		1CF804531E6D44AE00FA0878 /* DiceStickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CF8044C1E6D44AE00FA0878 /* DiceStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,13 @@
 			remoteGlobalIDString = 1C8472871E38328800112A53;
 			remoteInfo = Dice5Widget;
 		};
+		1CF804511E6D44AE00FA0878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C84724B1E38327100112A53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CF8044B1E6D44AE00FA0878;
+			remoteInfo = DiceStickers;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -100,6 +109,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				1C8472951E38328800112A53 /* Dice5Widget.appex in Embed App Extensions */,
+				1CF804531E6D44AE00FA0878 /* DiceStickers.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +145,9 @@
 		1C84728D1E38328800112A53 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		1C8472901E38328800112A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1C8472921E38328800112A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF8044C1E6D44AE00FA0878 /* DiceStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiceStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF8044E1E6D44AE00FA0878 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		1CF804501E6D44AE00FA0878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +220,7 @@
 				1C84728C1E38328800112A53 /* Dice5Widget */,
 				1C3EBD441E39E6A6008BF505 /* DiceWatch5 */,
 				1C3EBD531E39E6A6008BF505 /* DiceWatch5 Extension */,
+				1CF8044D1E6D44AE00FA0878 /* DiceStickers */,
 				1C8472891E38328800112A53 /* Frameworks */,
 				1C8472541E38327100112A53 /* Products */,
 			);
@@ -221,6 +235,7 @@
 				1C8472881E38328800112A53 /* Dice5Widget.appex */,
 				1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */,
 				1C3EBD4F1E39E6A6008BF505 /* DiceWatch5 Extension.appex */,
+				1CF8044C1E6D44AE00FA0878 /* DiceStickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +290,15 @@
 			path = Dice5Widget;
 			sourceTree = "<group>";
 		};
+		1CF8044D1E6D44AE00FA0878 /* DiceStickers */ = {
+			isa = PBXGroup;
+			children = (
+				1CF8044E1E6D44AE00FA0878 /* Stickers.xcassets */,
+				1CF804501E6D44AE00FA0878 /* Info.plist */,
+			);
+			path = DiceStickers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +351,7 @@
 			dependencies = (
 				1C8472941E38328800112A53 /* PBXTargetDependency */,
 				1C3EBD5C1E39E6A6008BF505 /* PBXTargetDependency */,
+				1CF804521E6D44AE00FA0878 /* PBXTargetDependency */,
 			);
 			name = Dice5;
 			productName = Dice5;
@@ -386,6 +411,21 @@
 			productReference = 1C8472881E38328800112A53 /* Dice5Widget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		1CF8044B1E6D44AE00FA0878 /* DiceStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CF804561E6D44AE00FA0878 /* Build configuration list for PBXNativeTarget "DiceStickers" */;
+			buildPhases = (
+				1CF8044A1E6D44AE00FA0878 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiceStickers;
+			productName = DiceStickers;
+			productReference = 1CF8044C1E6D44AE00FA0878 /* DiceStickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -428,6 +468,11 @@
 						DevelopmentTeam = S87LZ337RB;
 						ProvisioningStyle = Automatic;
 					};
+					1CF8044B1E6D44AE00FA0878 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = S87LZ337RB;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1C84724E1E38327100112A53 /* Build configuration list for PBXProject "Dice5" */;
@@ -449,6 +494,7 @@
 				1C8472871E38328800112A53 /* Dice5Widget */,
 				1C3EBD421E39E6A6008BF505 /* DiceWatch5 */,
 				1C3EBD4E1E39E6A6008BF505 /* DiceWatch5 Extension */,
+				1CF8044B1E6D44AE00FA0878 /* DiceStickers */,
 			);
 		};
 /* End PBXProject section */
@@ -503,6 +549,14 @@
 			files = (
 				1C8046241E59AC10007177F3 /* Assets.xcassets in Resources */,
 				1C8472911E38328800112A53 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CF8044A1E6D44AE00FA0878 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF8044F1E6D44AE00FA0878 /* Stickers.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +634,11 @@
 			isa = PBXTargetDependency;
 			target = 1C8472871E38328800112A53 /* Dice5Widget */;
 			targetProxy = 1C8472931E38328800112A53 /* PBXContainerItemProxy */;
+		};
+		1CF804521E6D44AE00FA0878 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CF8044B1E6D44AE00FA0878 /* DiceStickers */;
+			targetProxy = 1CF804511E6D44AE00FA0878 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -894,6 +953,30 @@
 			};
 			name = Release;
 		};
+		1CF804541E6D44AE00FA0878 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = S87LZ337RB;
+				INFOPLIST_FILE = DiceStickers/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.DiceStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1CF804551E6D44AE00FA0878 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = S87LZ337RB;
+				INFOPLIST_FILE = DiceStickers/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit.DiceStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -959,6 +1042,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1CF804561E6D44AE00FA0878 /* Build configuration list for PBXNativeTarget "DiceStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF804541E6D44AE00FA0878 /* Debug */,
+				1CF804551E6D44AE00FA0878 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
