@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let die20:Dice = Dice(sides: 20, color: "red")
-    let die4:Dice = Dice(sides: 4, color: "red")
-    let die6:Dice = Dice(sides: 6, color: "red")
-    let die8:Dice = Dice(sides: 8, color: "red")
-    let die10:Dice = Dice(sides: 10, color: "red")
-    let die12:Dice = Dice(sides: 12, color: "red")
-    let die100:Dice = Dice(sides: 10, color: "red")
+    let die20:Dice = Dice(sides: 20)
+    let die4:Dice = Dice(sides: 4)
+    let die6:Dice = Dice(sides: 6)
+    let die8:Dice = Dice(sides: 8)
+    let die10:Dice = Dice(sides: 10)
+    let die12:Dice = Dice(sides: 12)
+    let die100:Dice = Dice(sides: 10)
 
     @IBOutlet weak var d20: UIButton!
     @IBOutlet weak var d4: UIButton!

@@ -18,6 +18,7 @@
 		1C3EBD5D1E39E6A6008BF505 /* DiceWatch5.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */; };
 		1C62AE0C1E5E9027002D77BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C62AE0D1E5E9028002D77BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
+		1C7A3D801E713EA5005B8570 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8046241E59AC10007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8472571E38327100112A53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472561E38327100112A53 /* AppDelegate.swift */; };
@@ -567,6 +568,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7A3D801E713EA5005B8570 /* dice.swift in Sources */,
 				1C3EBD571E39E6A6008BF505 /* ExtensionDelegate.swift in Sources */,
 				1C3EBD551E39E6A6008BF505 /* InterfaceController.swift in Sources */,
 			);
@@ -1050,6 +1052,7 @@
 				1CF804551E6D44AE00FA0878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

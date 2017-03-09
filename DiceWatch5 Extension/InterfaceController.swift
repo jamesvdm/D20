@@ -9,6 +9,13 @@
 import WatchKit
 import Foundation
 
+let die20:Dice = Dice(sides: 20)
+let die4:Dice = Dice(sides: 4)
+let die6:Dice = Dice(sides: 6)
+let die8:Dice = Dice(sides: 8)
+let die10:Dice = Dice(sides: 10)
+let die12:Dice = Dice(sides: 12)
+let die100:Dice = Dice(sides: 10)
 
 class InterfaceController: WKInterfaceController {
 
@@ -36,33 +43,27 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     @IBAction func d20Button() {
-        let d20Roll = String(arc4random_uniform(20))
-        d20.setBackgroundImageNamed("d20_\(d20Roll)")
+        d20.setBackgroundImageNamed(die20.rollImage())
     }
    
     @IBAction func d6Button() {
-        let d6Roll = String(arc4random_uniform(6))
-        d6.setBackgroundImageNamed("d6_\(d6Roll)")
+        d6.setBackgroundImageNamed(die6.rollImage())
     }
 
     @IBAction func d4Button() {
-        let d4Roll = String(arc4random_uniform(4))
-        d4.setBackgroundImageNamed("d4_\(d4Roll)")
+        d4.setBackgroundImageNamed(die4.rollImage())
     }
 
     @IBAction func d8Button() {
-        let d8Roll = String(arc4random_uniform(8))
-        d8.setBackgroundImageNamed("d8_\(d8Roll)")
+        d8.setBackgroundImageNamed(die8.rollImage())
     }
     
     @IBAction func d10Button() {
-        let d10Roll = String(arc4random_uniform(10))
-        d10.setBackgroundImageNamed("d10_\(d10Roll)")
+        d10.setBackgroundImageNamed(die10.rollImage())
     }
    
     @IBAction func d12Button() {
-        let d12Roll = String(arc4random_uniform(12))
-        d12.setBackgroundImageNamed("d12_\(d12Roll)")
+        d12.setBackgroundImageNamed(die12.rollImage())
     }
     
     @IBAction func d100Button() {

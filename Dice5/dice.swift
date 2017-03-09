@@ -9,12 +9,11 @@
 import UIKit
 
 class Dice {
-    let sides:Int
-    let color:String
     
-    init(sides:Int, color:String) {
+    let sides:Int
+    
+    init(sides:Int) {
         self.sides = sides
-        self.color = color
     }
     
     func roll() -> Int {
