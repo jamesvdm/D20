@@ -43,30 +43,37 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     @IBAction func d20Button() {
+        WKInterfaceDevice.current().play(.click)
         d20.setBackgroundImageNamed(die20.rollImage())
     }
    
     @IBAction func d6Button() {
+        WKInterfaceDevice.current().play(.click)
         d6.setBackgroundImageNamed(die6.rollImage())
     }
 
     @IBAction func d4Button() {
+        WKInterfaceDevice.current().play(.click)
         d4.setBackgroundImageNamed(die4.rollImage())
     }
 
     @IBAction func d8Button() {
+        WKInterfaceDevice.current().play(.click)
         d8.setBackgroundImageNamed(die8.rollImage())
     }
     
     @IBAction func d10Button() {
+        WKInterfaceDevice.current().play(.click)
         d10.setBackgroundImageNamed(die10.rollImage())
     }
    
     @IBAction func d12Button() {
+        WKInterfaceDevice.current().play(.click)
         d12.setBackgroundImageNamed(die12.rollImage())
     }
     
     @IBAction func d100Button() {
+        WKInterfaceDevice.current().play(.click)
         let d100Roll = String(arc4random_uniform(10))
         d100.setBackgroundImageNamed("d100_\(d100Roll)")
     }

@@ -19,6 +19,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     let die12:Dice = Dice(sides: 12)
     let die100:Dice = Dice(sides: 10)
     
+    let generator = UIImpactFeedbackGenerator(style: .medium)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,30 +62,37 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 
     @IBAction func d20Button(_ sender: Any) {
+        generator.impactOccurred()
         d20.setImage(UIImage(named: die20.rollImage()), for: .normal)
     }
 
     @IBAction func d4Tapped(_ sender: Any) {
+        generator.impactOccurred()
         d4.setImage(UIImage(named: die4.rollImage()), for: .normal)
     }
     
     @IBAction func d6Tapped(_ sender: Any) {
+        generator.impactOccurred()
         d6.setImage(UIImage(named: die6.rollImage()), for: .normal)
     }
 
     @IBAction func d8Tapped(_ sender: Any) {
+        generator.impactOccurred()
         d8.setImage(UIImage(named: die8.rollImage()), for: .normal)
     }
     
     @IBAction func d10Tapped(_ sender: Any) {
+        generator.impactOccurred()
         d10.setImage(UIImage(named: die10.rollImage()), for: .normal)
     }
     
     @IBAction func d12Tapped(_ sender: Any) {
+        generator.impactOccurred()
         d12.setImage(UIImage(named: die12.rollImage()), for: .normal)
     }
     
     @IBAction func d100Tapped(_ sender: Any) {
+        generator.impactOccurred()
         let d100Roll = String(arc4random_uniform(10))
         d100.setImage(UIImage(named: "d100_\(d100Roll)"), for: .normal)
 
