@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" userLabel="D20" customClass="InterfaceController" customModule="DiceWatch5" customModuleProvider="target">
                     <items>
-                        <button width="112" height="122" alignment="center" verticalAlignment="center" backgroundImage="d20_0" id="liM-DR-DTc">
+                        <button width="112" height="122" alignment="center" verticalAlignment="center" backgroundImage="d20_20" id="liM-DR-DTc">
                             <connections>
                                 <action selector="d20Button" destination="AgC-eL-Hgc" id="h8S-fQ-fgP"/>
                             </connections>
@@ -32,7 +32,7 @@
             <objects>
                 <controller id="18z-eg-tKt" userLabel="D4" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="112" height="101" alignment="center" verticalAlignment="center" backgroundImage="d4_0" id="BKS-wX-ZvO">
+                        <button width="112" height="101" alignment="center" verticalAlignment="center" backgroundImage="d4_4" id="BKS-wX-ZvO">
                             <connections>
                                 <action selector="d4Button" destination="18z-eg-tKt" id="s3N-Y0-Wnl"/>
                             </connections>
@@ -51,7 +51,7 @@
             <objects>
                 <controller id="84b-dR-SsF" userLabel="D10" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="120" height="95" alignment="center" verticalAlignment="center" backgroundImage="d10_0" id="zKI-BP-HBg">
+                        <button width="120" height="95" alignment="center" verticalAlignment="center" backgroundImage="d10_10" id="zKI-BP-HBg">
                             <connections>
                                 <action selector="d10Button" destination="84b-dR-SsF" id="VRh-CS-hiN"/>
                             </connections>
@@ -70,7 +70,7 @@
             <objects>
                 <controller id="E8H-d7-IxA" userLabel="D12" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="108" height="113" alignment="center" verticalAlignment="center" backgroundImage="d12_0" id="T82-sR-dnV">
+                        <button width="108" height="113" alignment="center" verticalAlignment="center" backgroundImage="d12_12" id="T82-sR-dnV">
                             <connections>
                                 <action selector="d12Button" destination="E8H-d7-IxA" id="5DI-1i-ztw"/>
                             </connections>
@@ -107,7 +107,7 @@
             <objects>
                 <controller id="Qey-CE-utG" userLabel="D6" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="d6_0" id="pzw-W2-I42">
+                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="d6_6" id="pzw-W2-I42">
                             <connections>
                                 <action selector="d6Button" destination="Qey-CE-utG" id="4GU-Mh-W7l"/>
                             </connections>
@@ -126,7 +126,7 @@
             <objects>
                 <controller id="OMv-cl-2iR" userLabel="D8" customClass="InterfaceController" customModule="DiceWatch5_Extension">
                     <items>
-                        <button width="110" height="107" alignment="center" verticalAlignment="center" backgroundImage="d8_0" id="E6h-L2-u5f">
+                        <button width="110" height="107" alignment="center" verticalAlignment="center" backgroundImage="d8_8" id="E6h-L2-u5f">
                             <connections>
                                 <action selector="d8Button" destination="OMv-cl-2iR" id="Ut1-mt-Y2f"/>
                             </connections>

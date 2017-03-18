@@ -17,7 +17,7 @@ class Dice {
     }
     
     func roll() -> Int {
-        return Int(arc4random_uniform(UInt32(self.sides)))
+        return Int(arc4random_uniform(UInt32(self.sides)) + 1)
     }
     
     func rollImage() -> String {
