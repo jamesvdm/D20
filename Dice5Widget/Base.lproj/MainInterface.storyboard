@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,28 +21,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="a6Q-U7-948">
-                                <rect key="frame" x="0.0" y="10" width="320" height="189"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="a6Q-U7-948">
+                                <rect key="frame" x="0.0" y="10" width="320" height="188"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P5m-3f-dTW">
-                                        <rect key="frame" x="30.5" y="0.0" width="259" height="91"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="P5m-3f-dTW">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsU-4i-pKS" userLabel="d20">
-                                                <rect key="frame" x="0.0" y="0.0" width="82" height="91"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="91"/>
                                                 <state key="normal" image="d20_20"/>
                                                 <connections>
                                                     <action selector="d20Button:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="XxB-Hh-vTx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-13-ZIj">
-                                                <rect key="frame" x="102" y="11.5" width="77" height="68"/>
+                                                <rect key="frame" x="120.5" y="11.5" width="99" height="68"/>
                                                 <state key="normal" image="d4_4"/>
                                                 <connections>
                                                     <action selector="d4Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="LdL-no-u64"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqj-7O-uDf">
-                                                <rect key="frame" x="199" y="15.5" width="60" height="60"/>
+                                                <rect key="frame" x="234.5" y="15.5" width="85.5" height="60"/>
                                                 <state key="normal" image="d6_6"/>
                                                 <connections>
                                                     <action selector="d6Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="azi-gc-nke"/>
@@ -50,32 +50,32 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QTM-lS-tuX">
-                                        <rect key="frame" x="0.0" y="98" width="320" height="91"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QTM-lS-tuX">
+                                        <rect key="frame" x="0.0" y="97" width="320" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW3-nn-WXL">
-                                                <rect key="frame" x="0.0" y="0.0" width="52" height="91"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW3-nn-WXL">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="91"/>
                                                 <state key="normal" image="d8_8"/>
                                                 <connections>
                                                     <action selector="d8Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="PkK-Ya-Kwe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-MH-Lk9">
-                                                <rect key="frame" x="57" y="0.0" width="85" height="91"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-MH-Lk9">
+                                                <rect key="frame" x="72" y="0.0" width="80.5" height="91"/>
                                                 <state key="normal" image="d10_10"/>
                                                 <connections>
                                                     <action selector="d10Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="9yl-WO-XYj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-Z3-7Sy">
-                                                <rect key="frame" x="147" y="0.0" width="85" height="91"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY3-Z3-7Sy">
+                                                <rect key="frame" x="157.5" y="0.0" width="80" height="91"/>
                                                 <state key="normal" image="d12_12"/>
                                                 <connections>
                                                     <action selector="d12Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="AkJ-n0-ZKi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQq-1W-vof">
-                                                <rect key="frame" x="237" y="0.0" width="83" height="91"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQq-1W-vof">
+                                                <rect key="frame" x="242.5" y="0.0" width="77.5" height="91"/>
                                                 <state key="normal" image="d100_0"/>
                                                 <connections>
                                                     <action selector="d100Tapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="I6M-NZ-H74"/>

@@ -23,7 +23,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        d20.setImage(UIImage(named: die20.getSide(face: 0)), for: .normal)
         self.extensionContext?.widgetLargestAvailableDisplayMode = NCWidgetDisplayMode.expanded
         // Do any additional setup after loading the view from its nib.
     }

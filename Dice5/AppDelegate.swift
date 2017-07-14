@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import StoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    //Section 1
+    let numLaunchKey = "numbersOfLaunches"
+    var numLaunches: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: self.numLaunchKey)
+        } set {
+            UserDefaults.standard.set(newValue, forKey: self.numLaunchKey)
+        }
+    }
 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Section 2
+        numLaunches += 1
+        //Section 3
+        if numLaunches > 10 {
+            if #available(iOS 10.3, *) {
+                SKStoreReviewController.requestReview()
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+        
         return true
     }
 
@@ -43,4 +66,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
