@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1C17BED51E3C352900D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C17BED61E3C423A00D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
+		1C2A3B551F1F349C005FCD24 /* iapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2A3B541F1F349C005FCD24 /* iapHandler.swift */; };
+		1C2A3B831F1F41D4005FCD24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */; };
 		1C3EBD471E39E6A6008BF505 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD451E39E6A6008BF505 /* Interface.storyboard */; };
 		1C3EBD491E39E6A6008BF505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD481E39E6A6008BF505 /* Assets.xcassets */; };
 		1C3EBD501E39E6A6008BF505 /* DiceWatch5 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C3EBD4F1E39E6A6008BF505 /* DiceWatch5 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -118,6 +120,8 @@
 
 /* Begin PBXFileReference section */
 		1C17BED41E3C352900D0E783 /* dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dice.swift; sourceTree = "<group>"; };
+		1C2A3B541F1F349C005FCD24 /* iapHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iapHandler.swift; sourceTree = "<group>"; };
+		1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceWatch5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3EBD461E39E6A6008BF505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1C3EBD481E39E6A6008BF505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2A3B831F1F41D4005FCD24 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +250,7 @@
 			children = (
 				1C8472561E38327100112A53 /* AppDelegate.swift */,
 				1C8472581E38327100112A53 /* ViewController.swift */,
+				1C2A3B541F1F349C005FCD24 /* iapHandler.swift */,
 				1C84725A1E38327100112A53 /* Main.storyboard */,
 				1C84725D1E38327100112A53 /* Assets.xcassets */,
 				1C84725F1E38327100112A53 /* LaunchScreen.storyboard */,
@@ -275,6 +281,7 @@
 		1C8472891E38328800112A53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */,
 				1C84728A1E38328800112A53 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -450,6 +457,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = S87LZ337RB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					1C8472661E38327100112A53 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -579,6 +591,7 @@
 				1C17BED51E3C352900D0E783 /* dice.swift in Sources */,
 				1C8472591E38327100112A53 /* ViewController.swift in Sources */,
 				1C8472571E38327100112A53 /* AppDelegate.swift in Sources */,
+				1C2A3B551F1F349C005FCD24 /* iapHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
