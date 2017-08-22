@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H6Y-Iy-Nuw">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -98,7 +98,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1i-Ve-PYf">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items/>
+                                <items>
+                                    <barButtonItem style="plain" id="4Ik-UV-Lvh">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="BA4-7m-fNp">
+                                            <rect key="frame" x="282" y="11" width="22" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <segue destination="fzA-kz-5FQ" kind="show" id="KLH-CS-dHZ"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,6 +117,7 @@
                             <constraint firstItem="gqI-Ga-3mx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fLp-Pb-FSy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ONG-Bs-kg6"/>
                     <connections>
                         <outlet property="d10" destination="gNC-jO-7pf" id="cSw-AZ-hbs"/>
                         <outlet property="d100" destination="jH1-YR-gMD" id="W3M-uJ-Iaq"/>
@@ -119,10 +130,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="53"/>
+            <point key="canvasLocation" x="1027.5" y="52.816901408450704"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="VRv-Qa-dIB">
+            <objects>
+                <viewController id="fzA-kz-5FQ" customClass="SettingsViewController" customModule="Dice5" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3i-nX-LdC"/>
+                        <viewControllerLayoutGuide type="bottom" id="lee-Ih-KU4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3NC-s7-E9g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-m0-EvU">
+                                <rect key="frame" x="122" y="203" width="76" height="162"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-TH-TUi">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                        <state key="normal" image="Icon-App-76x76"/>
+                                        <connections>
+                                            <action selector="btnBlueDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENo-of-v8A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52y-H5-mnB">
+                                        <rect key="frame" x="0.0" y="86" width="76" height="76"/>
+                                        <state key="normal" image="Icon-App-Red-76x76"/>
+                                        <connections>
+                                            <action selector="btnRedDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="9MQ-bG-Qdk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0CQ-m0-EvU" firstAttribute="centerX" secondItem="3NC-s7-E9g" secondAttribute="centerX" id="cxp-SK-Ls0"/>
+                            <constraint firstItem="0CQ-m0-EvU" firstAttribute="centerY" secondItem="3NC-s7-E9g" secondAttribute="centerY" id="iTf-c4-eOd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJL-Q9-P5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756.875" y="52.816901408450704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mba-WV-VVc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H6Y-Iy-Nuw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n0A-2m-E90">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ANd-iB-HXb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7g-x0-XBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="52.816901408450704"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Icon-App-76x76" width="76" height="76"/>
+        <image name="Icon-App-Red-76x76" width="76" height="76"/>
         <image name="d100_0" width="83" height="73"/>
         <image name="d10_10" width="85" height="70"/>
         <image name="d12_12" width="85" height="86"/>

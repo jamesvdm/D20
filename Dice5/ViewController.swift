@@ -15,18 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        IAPHandler.shared.fetchAvailableProducts()
-        IAPHandler.shared.purchaseStatusBlock = {[weak self] (type) in
-            guard let strongSelf = self else{ return }
-            if type == .purchased {
-                let alertView = UIAlertController(title: "", message: type.message(), preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: { (alert) in
-                    
-                })
-                alertView.addAction(action)
-                strongSelf.present(alertView, animated: true, completion: nil)
-            }
-        }
     }
     
     let die20:Dice = Dice(sides: 20)
@@ -46,13 +34,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var d10: UIButton!
     @IBOutlet weak var d12: UIButton!
     @IBOutlet weak var d100: UIButton!
-    @IBOutlet weak var changeWallpaper: UIBarButtonItem!
-
-    @IBAction func btnChangeWallpaper(_ sender: Any) {
-        IAPHandler.shared.purchaseMyProduct(index: 0)
-        print("Change Wallpaper Tapped")
-    }
-    
     
     @IBAction func d20Tapped(_ sender: Any) {
         generator.impactOccurred()
@@ -89,5 +70,32 @@ class ViewController: UIViewController {
         let d100Roll = String(arc4random_uniform(10))
         d100.setImage(UIImage(named: "d100_\(d100Roll)"), for: .normal)
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 

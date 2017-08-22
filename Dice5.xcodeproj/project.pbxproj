@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C016AAA1F4C2E39004059A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */; };
+		1C016AAD1F4C31B1004059A5 /* Icon-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C016AAC1F4C31B1004059A5 /* Icon-2@2x.png */; };
 		1C17BED51E3C352900D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C17BED61E3C423A00D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
-		1C2A3B551F1F349C005FCD24 /* iapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2A3B541F1F349C005FCD24 /* iapHandler.swift */; };
 		1C2A3B831F1F41D4005FCD24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */; };
 		1C3EBD471E39E6A6008BF505 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD451E39E6A6008BF505 /* Interface.storyboard */; };
 		1C3EBD491E39E6A6008BF505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD481E39E6A6008BF505 /* Assets.xcassets */; };
@@ -119,8 +120,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1C016AAC1F4C31B1004059A5 /* Icon-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-2@2x.png"; sourceTree = "<group>"; };
 		1C17BED41E3C352900D0E783 /* dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dice.swift; sourceTree = "<group>"; };
-		1C2A3B541F1F349C005FCD24 /* iapHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iapHandler.swift; sourceTree = "<group>"; };
 		1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceWatch5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3EBD461E39E6A6008BF505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C016AAB1F4C3188004059A5 /* AlternateIcons */ = {
+			isa = PBXGroup;
+			children = (
+				1C016AAC1F4C31B1004059A5 /* Icon-2@2x.png */,
+			);
+			name = AlternateIcons;
+			sourceTree = "<group>";
+		};
 		1C3EBD441E39E6A6008BF505 /* DiceWatch5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,9 +258,10 @@
 		1C8472551E38327100112A53 /* Dice5 */ = {
 			isa = PBXGroup;
 			children = (
+				1C016AAB1F4C3188004059A5 /* AlternateIcons */,
 				1C8472561E38327100112A53 /* AppDelegate.swift */,
 				1C8472581E38327100112A53 /* ViewController.swift */,
-				1C2A3B541F1F349C005FCD24 /* iapHandler.swift */,
+				1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */,
 				1C84725A1E38327100112A53 /* Main.storyboard */,
 				1C84725D1E38327100112A53 /* Assets.xcassets */,
 				1C84725F1E38327100112A53 /* LaunchScreen.storyboard */,
@@ -536,6 +547,7 @@
 			files = (
 				1C8472611E38327100112A53 /* LaunchScreen.storyboard in Resources */,
 				1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */,
+				1C016AAD1F4C31B1004059A5 /* Icon-2@2x.png in Resources */,
 				1C84725C1E38327100112A53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +603,7 @@
 				1C17BED51E3C352900D0E783 /* dice.swift in Sources */,
 				1C8472591E38327100112A53 /* ViewController.swift in Sources */,
 				1C8472571E38327100112A53 /* AppDelegate.swift in Sources */,
-				1C2A3B551F1F349C005FCD24 /* iapHandler.swift in Sources */,
+				1C016AAA1F4C2E39004059A5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
