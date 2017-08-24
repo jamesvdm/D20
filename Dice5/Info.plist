@@ -48,23 +48,84 @@
         <dict>
             <key>CFBundleIconFiles</key>
             <array>
-                <string>Icon-1</string>
+                <string>Blue-Icon</string>
             </array>
             <key>UIPrerenderedIcon</key>
             <false/>
         </dict>
         <key>CFBundleAlternateIcons</key>
         <dict>
-            <key>AppIcon-2</key>
+            <key>Black</key>
             <dict>
                 <key>CFBundleIconFiles</key>
                 <array>
-                    <string>Icon-2</string>
+                    <string>Black-Icon</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>Grey</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Grey-Icon</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>Inverse</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Inverse-Icon</string>
                 </array>
                 <key>UIPrerenderedIcon</key>
                 <false/>
             </dict>
         </dict>
     </dict>
+    <key>CFBundleIcons~ipad</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>Blue-Icon-iPad</string>
+            </array>
+            <key>UIPrerenderedIcon</key>
+            <false/>
+        </dict>
+        <key>CFBundleAlternateIcons</key>
+        <dict>
+            <key>Black</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Black-Icon-iPad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>Grey</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Grey-Icon-iPad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>Inverse</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Inverse-Icon-iPad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
+
 </dict>
 </plist>

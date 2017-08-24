@@ -145,20 +145,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-m0-EvU">
-                                <rect key="frame" x="122" y="203" width="76" height="162"/>
+                                <rect key="frame" x="130" y="114" width="60" height="340"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-BU-iVd">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <state key="normal" title="Unlock"/>
+                                        <connections>
+                                            <action selector="btnBuy:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="BHw-F7-7Nx"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-TH-TUi">
-                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
-                                        <state key="normal" image="Icon-App-76x76"/>
+                                        <rect key="frame" x="0.0" y="70" width="60" height="60"/>
+                                        <state key="normal" image="Blue-Icon.png"/>
                                         <connections>
                                             <action selector="btnBlueDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENo-of-v8A"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52y-H5-mnB">
-                                        <rect key="frame" x="0.0" y="86" width="76" height="76"/>
-                                        <state key="normal" image="Icon-App-Red-76x76"/>
+                                        <rect key="frame" x="0.0" y="140" width="60" height="60"/>
+                                        <state key="normal" image="Inverse-Icon.png"/>
                                         <connections>
                                             <action selector="btnRedDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="9MQ-bG-Qdk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-VQ-4kQ">
+                                        <rect key="frame" x="0.0" y="210" width="60" height="60"/>
+                                        <state key="normal" image="Grey-Icon.png"/>
+                                        <connections>
+                                            <action selector="btnGreyDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="fXN-kg-Kwo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-f1-m7f">
+                                        <rect key="frame" x="0.0" y="280" width="60" height="60"/>
+                                        <state key="normal" image="Black-Icon.png"/>
+                                        <connections>
+                                            <action selector="btnBlackDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENm-6o-00d"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -170,6 +191,12 @@
                             <constraint firstItem="0CQ-m0-EvU" firstAttribute="centerY" secondItem="3NC-s7-E9g" secondAttribute="centerY" id="iTf-c4-eOd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blackDie" destination="5wc-f1-m7f" id="Uzl-Lk-QN6"/>
+                        <outlet property="blueDie" destination="KEQ-TH-TUi" id="wsB-UV-ll1"/>
+                        <outlet property="greyDie" destination="nRB-VQ-4kQ" id="0nZ-gx-NkU"/>
+                        <outlet property="inverseDie" destination="52y-H5-mnB" id="slb-PP-QFS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJL-Q9-P5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,8 +222,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon-App-76x76" width="76" height="76"/>
-        <image name="Icon-App-Red-76x76" width="76" height="76"/>
+        <image name="Black-Icon.png" width="60" height="60"/>
+        <image name="Blue-Icon.png" width="60" height="60"/>
+        <image name="Grey-Icon.png" width="60" height="60"/>
+        <image name="Inverse-Icon.png" width="60" height="60"/>
         <image name="d100_0" width="83" height="73"/>
         <image name="d10_10" width="85" height="70"/>
         <image name="d12_12" width="85" height="86"/>

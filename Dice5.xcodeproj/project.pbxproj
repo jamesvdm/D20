@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C016AAA1F4C2E39004059A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */; };
-		1C016AAD1F4C31B1004059A5 /* Icon-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C016AAC1F4C31B1004059A5 /* Icon-2@2x.png */; };
 		1C17BED51E3C352900D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C17BED61E3C423A00D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C2A3B831F1F41D4005FCD24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */; };
@@ -19,6 +18,12 @@
 		1C3EBD571E39E6A6008BF505 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3EBD561E39E6A6008BF505 /* ExtensionDelegate.swift */; };
 		1C3EBD591E39E6A6008BF505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD581E39E6A6008BF505 /* Assets.xcassets */; };
 		1C3EBD5D1E39E6A6008BF505 /* DiceWatch5.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */; };
+		1C6EBDCF1F4DB49F0047E22D /* Blue-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6EBDC71F4DB49F0047E22D /* Blue-Icon@2x.png */; };
+		1C6EBDD01F4DB49F0047E22D /* Blue-Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6EBDC81F4DB49F0047E22D /* Blue-Icon@3x.png */; };
+		1C6EBDD11F4DB49F0047E22D /* Grey-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6EBDC91F4DB49F0047E22D /* Grey-Icon@2x.png */; };
+		1C6EBDD21F4DB49F0047E22D /* Grey-Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6EBDCA1F4DB49F0047E22D /* Grey-Icon@3x.png */; };
+		1C6EBDD31F4DB49F0047E22D /* Inverse-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6EBDCB1F4DB49F0047E22D /* Inverse-Icon@2x.png */; };
+		1C6EBDD41F4DB49F0047E22D /* Inverse-Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C6EBDCC1F4DB49F0047E22D /* Inverse-Icon@3x.png */; };
 		1C7A3D801E713EA5005B8570 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1C8046241E59AC10007177F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
@@ -32,6 +37,12 @@
 		1C84728E1E38328800112A53 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84728D1E38328800112A53 /* TodayViewController.swift */; };
 		1C8472911E38328800112A53 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84728F1E38328800112A53 /* MainInterface.storyboard */; };
 		1C8472951E38328800112A53 /* Dice5Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C8472881E38328800112A53 /* Dice5Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1CB9DC051F4E7F7C0017928C /* Black-Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9DC041F4E7F7C0017928C /* Black-Icon-iPad.png */; };
+		1CB9DC081F4E7F870017928C /* Black-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9DC061F4E7F870017928C /* Black-Icon@2x.png */; };
+		1CB9DC091F4E7F870017928C /* Black-Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9DC071F4E7F870017928C /* Black-Icon@3x.png */; };
+		1CB9DC0D1F4E80360017928C /* Blue-Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9DC0A1F4E80360017928C /* Blue-Icon-iPad.png */; };
+		1CB9DC0E1F4E80360017928C /* Grey-Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9DC0B1F4E80360017928C /* Grey-Icon-iPad.png */; };
+		1CB9DC0F1F4E80360017928C /* Inverse-Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9DC0C1F4E80360017928C /* Inverse-Icon-iPad.png */; };
 		1CD761211E7D19D40056CBFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725D1E38327100112A53 /* Assets.xcassets */; };
 		1CF8044F1E6D44AE00FA0878 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF8044E1E6D44AE00FA0878 /* Stickers.xcassets */; };
 		1CF804531E6D44AE00FA0878 /* DiceStickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1CF8044C1E6D44AE00FA0878 /* DiceStickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -121,7 +132,6 @@
 
 /* Begin PBXFileReference section */
 		1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		1C016AAC1F4C31B1004059A5 /* Icon-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-2@2x.png"; sourceTree = "<group>"; };
 		1C17BED41E3C352900D0E783 /* dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dice.swift; sourceTree = "<group>"; };
 		1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceWatch5.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +143,12 @@
 		1C3EBD561E39E6A6008BF505 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		1C3EBD581E39E6A6008BF505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C3EBD5A1E39E6A6008BF505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6EBDC71F4DB49F0047E22D /* Blue-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon@2x.png"; sourceTree = "<group>"; };
+		1C6EBDC81F4DB49F0047E22D /* Blue-Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon@3x.png"; sourceTree = "<group>"; };
+		1C6EBDC91F4DB49F0047E22D /* Grey-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grey-Icon@2x.png"; sourceTree = "<group>"; };
+		1C6EBDCA1F4DB49F0047E22D /* Grey-Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grey-Icon@3x.png"; sourceTree = "<group>"; };
+		1C6EBDCB1F4DB49F0047E22D /* Inverse-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inverse-Icon@2x.png"; sourceTree = "<group>"; };
+		1C6EBDCC1F4DB49F0047E22D /* Inverse-Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inverse-Icon@3x.png"; sourceTree = "<group>"; };
 		1C8472531E38327100112A53 /* Dice5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dice5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8472561E38327100112A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C8472581E38327100112A53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +167,12 @@
 		1C84728D1E38328800112A53 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		1C8472901E38328800112A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1C8472921E38328800112A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CB9DC041F4E7F7C0017928C /* Black-Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black-Icon-iPad.png"; sourceTree = "<group>"; };
+		1CB9DC061F4E7F870017928C /* Black-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black-Icon@2x.png"; sourceTree = "<group>"; };
+		1CB9DC071F4E7F870017928C /* Black-Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black-Icon@3x.png"; sourceTree = "<group>"; };
+		1CB9DC0A1F4E80360017928C /* Blue-Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blue-Icon-iPad.png"; sourceTree = "<group>"; };
+		1CB9DC0B1F4E80360017928C /* Grey-Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grey-Icon-iPad.png"; sourceTree = "<group>"; };
+		1CB9DC0C1F4E80360017928C /* Inverse-Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inverse-Icon-iPad.png"; sourceTree = "<group>"; };
 		1CF8044C1E6D44AE00FA0878 /* DiceStickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiceStickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF8044E1E6D44AE00FA0878 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		1CF804501E6D44AE00FA0878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,7 +222,18 @@
 		1C016AAB1F4C3188004059A5 /* AlternateIcons */ = {
 			isa = PBXGroup;
 			children = (
-				1C016AAC1F4C31B1004059A5 /* Icon-2@2x.png */,
+				1CB9DC0A1F4E80360017928C /* Blue-Icon-iPad.png */,
+				1CB9DC0B1F4E80360017928C /* Grey-Icon-iPad.png */,
+				1CB9DC0C1F4E80360017928C /* Inverse-Icon-iPad.png */,
+				1CB9DC041F4E7F7C0017928C /* Black-Icon-iPad.png */,
+				1CB9DC061F4E7F870017928C /* Black-Icon@2x.png */,
+				1CB9DC071F4E7F870017928C /* Black-Icon@3x.png */,
+				1C6EBDC71F4DB49F0047E22D /* Blue-Icon@2x.png */,
+				1C6EBDC81F4DB49F0047E22D /* Blue-Icon@3x.png */,
+				1C6EBDC91F4DB49F0047E22D /* Grey-Icon@2x.png */,
+				1C6EBDCA1F4DB49F0047E22D /* Grey-Icon@3x.png */,
+				1C6EBDCB1F4DB49F0047E22D /* Inverse-Icon@2x.png */,
+				1C6EBDCC1F4DB49F0047E22D /* Inverse-Icon@3x.png */,
 			);
 			name = AlternateIcons;
 			sourceTree = "<group>";
@@ -545,9 +578,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C6EBDCF1F4DB49F0047E22D /* Blue-Icon@2x.png in Resources */,
+				1CB9DC051F4E7F7C0017928C /* Black-Icon-iPad.png in Resources */,
+				1C6EBDD11F4DB49F0047E22D /* Grey-Icon@2x.png in Resources */,
+				1CB9DC0F1F4E80360017928C /* Inverse-Icon-iPad.png in Resources */,
+				1C6EBDD01F4DB49F0047E22D /* Blue-Icon@3x.png in Resources */,
 				1C8472611E38327100112A53 /* LaunchScreen.storyboard in Resources */,
+				1C6EBDD31F4DB49F0047E22D /* Inverse-Icon@2x.png in Resources */,
+				1C6EBDD21F4DB49F0047E22D /* Grey-Icon@3x.png in Resources */,
+				1CB9DC0E1F4E80360017928C /* Grey-Icon-iPad.png in Resources */,
 				1C8046221E59AADD007177F3 /* Assets.xcassets in Resources */,
-				1C016AAD1F4C31B1004059A5 /* Icon-2@2x.png in Resources */,
+				1CB9DC081F4E7F870017928C /* Black-Icon@2x.png in Resources */,
+				1C6EBDD41F4DB49F0047E22D /* Inverse-Icon@3x.png in Resources */,
+				1CB9DC091F4E7F870017928C /* Black-Icon@3x.png in Resources */,
+				1CB9DC0D1F4E80360017928C /* Blue-Icon-iPad.png in Resources */,
 				1C84725C1E38327100112A53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
