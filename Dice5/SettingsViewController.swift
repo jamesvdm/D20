@@ -128,7 +128,7 @@ class SettingsViewController: UIViewController, SKProductsRequestDelegate, SKPay
         
         for transaction: AnyObject in transactions {
             let trans = transaction as! SKPaymentTransaction
-            print(trans.error)
+            //print(trans.error)
             let defaults:UserDefaults = UserDefaults.standard
             switch trans.transactionState {
             case .purchased:
