@@ -19,7 +19,7 @@ class SettingsViewController: UIViewController, SKProductsRequestDelegate, SKPay
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Alternative Icons"
+        title = "Settings"
         
         let defaults:UserDefaults = UserDefaults.standard
 

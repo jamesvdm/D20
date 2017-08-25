@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        title = "Critical Hit"
-        
+        navigationItem.title = "Critical Hit"
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     let die20:Dice = Dice(sides: 20)
@@ -72,32 +75,4 @@ class ViewController: UIViewController {
         let d100Roll = String(arc4random_uniform(10))
         d100.setImage(UIImage(named: "d100_\(d100Roll)"), for: .normal)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
-
