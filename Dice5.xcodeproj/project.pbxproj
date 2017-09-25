@@ -31,8 +31,6 @@
 		1C8472591E38327100112A53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472581E38327100112A53 /* ViewController.swift */; };
 		1C84725C1E38327100112A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725A1E38327100112A53 /* Main.storyboard */; };
 		1C8472611E38327100112A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84725F1E38327100112A53 /* LaunchScreen.storyboard */; };
-		1C84726C1E38327100112A53 /* Dice5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84726B1E38327100112A53 /* Dice5Tests.swift */; };
-		1C8472771E38327100112A53 /* Dice5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8472761E38327100112A53 /* Dice5UITests.swift */; };
 		1C84728B1E38328800112A53 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C84728A1E38328800112A53 /* NotificationCenter.framework */; };
 		1C84728E1E38328800112A53 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C84728D1E38328800112A53 /* TodayViewController.swift */; };
 		1C8472911E38328800112A53 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C84728F1E38328800112A53 /* MainInterface.storyboard */; };
@@ -157,11 +155,7 @@
 		1C8472601E38327100112A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C8472621E38327100112A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C8472671E38327100112A53 /* Dice5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dice5Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C84726B1E38327100112A53 /* Dice5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice5Tests.swift; sourceTree = "<group>"; };
-		1C84726D1E38327100112A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C8472721E38327100112A53 /* Dice5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dice5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C8472761E38327100112A53 /* Dice5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice5UITests.swift; sourceTree = "<group>"; };
-		1C8472781E38327100112A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C8472881E38328800112A53 /* Dice5Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dice5Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C84728A1E38328800112A53 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		1C84728D1E38328800112A53 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -263,8 +257,6 @@
 			isa = PBXGroup;
 			children = (
 				1C8472551E38327100112A53 /* Dice5 */,
-				1C84726A1E38327100112A53 /* Dice5Tests */,
-				1C8472751E38327100112A53 /* Dice5UITests */,
 				1C84728C1E38328800112A53 /* Dice5Widget */,
 				1C3EBD441E39E6A6008BF505 /* DiceWatch5 */,
 				1C3EBD531E39E6A6008BF505 /* DiceWatch5 Extension */,
@@ -302,24 +294,6 @@
 				1C17BED41E3C352900D0E783 /* dice.swift */,
 			);
 			path = Dice5;
-			sourceTree = "<group>";
-		};
-		1C84726A1E38327100112A53 /* Dice5Tests */ = {
-			isa = PBXGroup;
-			children = (
-				1C84726B1E38327100112A53 /* Dice5Tests.swift */,
-				1C84726D1E38327100112A53 /* Info.plist */,
-			);
-			path = Dice5Tests;
-			sourceTree = "<group>";
-		};
-		1C8472751E38327100112A53 /* Dice5UITests */ = {
-			isa = PBXGroup;
-			children = (
-				1C8472761E38327100112A53 /* Dice5UITests.swift */,
-				1C8472781E38327100112A53 /* Info.plist */,
-			);
-			path = Dice5UITests;
 			sourceTree = "<group>";
 		};
 		1C8472891E38328800112A53 /* Frameworks */ = {
@@ -661,7 +635,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C84726C1E38327100112A53 /* Dice5Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +642,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C8472771E38327100112A53 /* Dice5UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,7 +775,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
@@ -821,7 +793,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
 			};
@@ -943,7 +915,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -958,7 +930,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jamesvdm.criticalhit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1034,7 +1006,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1048,7 +1020,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -20,7 +20,7 @@ class SettingsViewController: UIViewController, SKProductsRequestDelegate, SKPay
         super.viewDidLoad()
         
         title = "Settings"
-        
+
         let defaults:UserDefaults = UserDefaults.standard
 
         if defaults.bool(forKey: "IAPCompleted") == true {
@@ -32,7 +32,7 @@ class SettingsViewController: UIViewController, SKProductsRequestDelegate, SKPay
             greyDie.isEnabled = false
             blackDie.isEnabled = false
         }
-        
+
         if(SKPaymentQueue.canMakePayments()) {
             let productID: NSSet = NSSet(objects: "app_icon_change")
             let request: SKProductsRequest = SKProductsRequest(productIdentifiers: productID as! Set<String>)

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6ya-ke-env">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6ya-ke-env">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -120,42 +120,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-m0-EvU">
-                                <rect key="frame" x="130" y="114" width="60" height="340"/>
+                                <rect key="frame" x="95" y="149" width="130" height="270"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-BU-iVd">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Unlock"/>
                                         <connections>
                                             <action selector="btnBuy:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="BHw-F7-7Nx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-TH-TUi">
-                                        <rect key="frame" x="0.0" y="70" width="60" height="60"/>
-                                        <state key="normal" image="Blue-Icon.png"/>
-                                        <connections>
-                                            <action selector="btnBlueDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENo-of-v8A"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52y-H5-mnB">
-                                        <rect key="frame" x="0.0" y="140" width="60" height="60"/>
-                                        <state key="normal" image="Inverse-Icon.png"/>
-                                        <connections>
-                                            <action selector="btnRedDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="9MQ-bG-Qdk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-VQ-4kQ">
-                                        <rect key="frame" x="0.0" y="210" width="60" height="60"/>
-                                        <state key="normal" image="Grey-Icon.png"/>
-                                        <connections>
-                                            <action selector="btnGreyDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="fXN-kg-Kwo"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-f1-m7f">
-                                        <rect key="frame" x="0.0" y="280" width="60" height="60"/>
-                                        <state key="normal" image="Black-Icon.png"/>
-                                        <connections>
-                                            <action selector="btnBlackDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENm-6o-00d"/>
-                                        </connections>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-hf-rv6">
+                                        <rect key="frame" x="0.0" y="70" width="130" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-TH-TUi">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <state key="normal" image="Blue-Icon.png"/>
+                                                <connections>
+                                                    <action selector="btnBlueDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENo-of-v8A"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52y-H5-mnB">
+                                                <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                <state key="normal" image="Inverse-Icon.png"/>
+                                                <connections>
+                                                    <action selector="btnRedDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="9MQ-bG-Qdk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-R5-xN8">
+                                        <rect key="frame" x="0.0" y="140" width="130" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-VQ-4kQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <state key="normal" image="Grey-Icon.png"/>
+                                                <connections>
+                                                    <action selector="btnGreyDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="fXN-kg-Kwo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-f1-m7f">
+                                                <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                <state key="normal" image="Black-Icon.png"/>
+                                                <connections>
+                                                    <action selector="btnBlackDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENm-6o-00d"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWO-hy-uVe">
+                                        <rect key="frame" x="0.0" y="210" width="130" height="60"/>
+                                        <state key="normal" title="Restore"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -185,6 +200,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="fBW-Zy-GJE"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Uh-fi-Ibv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -197,11 +213,11 @@
             </objects>
             <point key="canvasLocation" x="727.5" y="52.816901408450704"/>
         </scene>
-        <!--Item-->
+        <!--Dice-->
         <scene sceneID="qNn-UM-tEf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6r-oV-3oO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="Tab Bar Icon" id="WyS-wm-NLk"/>
+                    <tabBarItem key="tabBarItem" title="Dice" image="Tab Bar Icon" id="WyS-wm-NLk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Bxb-eI-gtT">
                         <rect key="frame" x="0.0" y="20" width="320" height="93"/>
