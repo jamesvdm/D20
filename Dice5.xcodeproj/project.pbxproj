@@ -10,7 +10,6 @@
 		1C016AAA1F4C2E39004059A5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */; };
 		1C17BED51E3C352900D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
 		1C17BED61E3C423A00D0E783 /* dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C17BED41E3C352900D0E783 /* dice.swift */; };
-		1C2A3B831F1F41D4005FCD24 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */; };
 		1C3EBD471E39E6A6008BF505 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD451E39E6A6008BF505 /* Interface.storyboard */; };
 		1C3EBD491E39E6A6008BF505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3EBD481E39E6A6008BF505 /* Assets.xcassets */; };
 		1C3EBD501E39E6A6008BF505 /* DiceWatch5 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C3EBD4F1E39E6A6008BF505 /* DiceWatch5 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -131,7 +130,6 @@
 /* Begin PBXFileReference section */
 		1C016AA91F4C2E39004059A5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1C17BED41E3C352900D0E783 /* dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dice.swift; sourceTree = "<group>"; };
-		1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1C3EBD431E39E6A6008BF505 /* DiceWatch5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceWatch5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3EBD461E39E6A6008BF505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		1C3EBD481E39E6A6008BF505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,7 +182,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C2A3B831F1F41D4005FCD24 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +296,6 @@
 		1C8472891E38328800112A53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C2A3B821F1F41D4005FCD24 /* StoreKit.framework */,
 				1C84728A1E38328800112A53 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
