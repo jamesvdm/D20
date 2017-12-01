@@ -21,35 +21,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-Ga-3mx">
-                                <rect key="frame" x="18" y="147" width="285" height="274"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gqI-Ga-3mx">
+                                <rect key="frame" x="18" y="137.5" width="285" height="293"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R16-VH-OB4" userLabel="d20">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zqd-2S-frg">
                                         <rect key="frame" x="0.0" y="0.0" width="285" height="91"/>
-                                        <state key="normal" image="d20_20"/>
-                                        <connections>
-                                            <action selector="d20Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeG-do-kfo"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLG-Ft-Kvi">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="91"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R16-VH-OB4" userLabel="d20">
+                                                <rect key="frame" x="100" y="0.0" width="85" height="91"/>
+                                                <state key="normal" image="d20_20"/>
+                                                <connections>
+                                                    <action selector="d20Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeG-do-kfo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlK-rG-vK5">
+                                                <rect key="frame" x="200" y="0.0" width="85" height="91"/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2RY-h9-aMt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sbG-Nx-00h">
-                                        <rect key="frame" x="0.0" y="102" width="285" height="75"/>
+                                        <rect key="frame" x="0.0" y="101" width="285" height="91"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlO-y1-Xxk" userLabel="d6">
-                                                <rect key="frame" x="0.0" y="0.0" width="85" height="75"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="91"/>
                                                 <state key="normal" image="d6_6"/>
                                                 <connections>
                                                     <action selector="d6Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTT-yW-plZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-ue-KBh" userLabel="d4">
-                                                <rect key="frame" x="100" y="0.0" width="85" height="75"/>
+                                                <rect key="frame" x="100" y="0.0" width="85" height="91"/>
                                                 <state key="normal" image="d4_4"/>
                                                 <connections>
                                                     <action selector="d4Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gH-Vr-nmK"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgI-JW-Xce" userLabel="d8">
-                                                <rect key="frame" x="200" y="0.0" width="85" height="75"/>
+                                                <rect key="frame" x="200" y="0.0" width="85" height="91"/>
                                                 <state key="normal" image="d8_8"/>
                                                 <connections>
                                                     <action selector="d8Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBT-Ap-gHU"/>
@@ -58,24 +76,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zOZ-LV-klE">
-                                        <rect key="frame" x="0.0" y="188" width="285" height="86"/>
+                                        <rect key="frame" x="0.0" y="202" width="285" height="91"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNC-jO-7pf" userLabel="d10">
-                                                <rect key="frame" x="0.0" y="0.0" width="85" height="86"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="91"/>
                                                 <state key="normal" image="d10_10"/>
                                                 <connections>
                                                     <action selector="d10Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKA-b3-wiq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqY-Bq-OYK" userLabel="d12">
-                                                <rect key="frame" x="100" y="0.0" width="85" height="86"/>
+                                                <rect key="frame" x="100" y="0.0" width="85" height="91"/>
                                                 <state key="normal" image="d12_12"/>
                                                 <connections>
                                                     <action selector="d12Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aBe-cD-4ho"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jH1-YR-gMD" userLabel="d100">
-                                                <rect key="frame" x="200" y="0.0" width="85" height="86"/>
+                                                <rect key="frame" x="200" y="0.0" width="85" height="91"/>
                                                 <state key="normal" image="d100_0"/>
                                                 <connections>
                                                     <action selector="d100Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arB-ZR-IQn"/>
@@ -86,7 +104,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gqI-Ga-3mx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mn8-5p-RTU"/>
                             <constraint firstItem="gqI-Ga-3mx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fLp-Pb-FSy"/>
@@ -94,6 +112,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ONG-Bs-kg6"/>
                     <connections>
+                        <outlet property="buttonReset" destination="QlK-rG-vK5" id="HDW-fh-yQk"/>
                         <outlet property="d10" destination="gNC-jO-7pf" id="cSw-AZ-hbs"/>
                         <outlet property="d100" destination="jH1-YR-gMD" id="W3M-uJ-Iaq"/>
                         <outlet property="d12" destination="rqY-Bq-OYK" id="YeE-6I-N0d"/>
@@ -101,11 +120,12 @@
                         <outlet property="d4" destination="vVH-ue-KBh" id="IRm-ME-ndJ"/>
                         <outlet property="d6" destination="HlO-y1-Xxk" id="1un-vI-zf5"/>
                         <outlet property="d8" destination="EgI-JW-Xce" id="bE0-OB-CC9"/>
+                        <outlet property="labelSum" destination="dLG-Ft-Kvi" id="aOK-Hg-SNb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="53"/>
+            <point key="canvasLocation" x="2175" y="52.816901408450704"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="VRv-Qa-dIB">
@@ -119,45 +139,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-m0-EvU">
-                                <rect key="frame" x="95" y="219" width="130" height="130"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wY5-ms-Z7B">
+                                <rect key="frame" x="93.5" y="184" width="133" height="200"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-hf-rv6">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0CQ-m0-EvU">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="200"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-TH-TUi">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                <state key="normal" image="Blue-Icon.png"/>
-                                                <connections>
-                                                    <action selector="btnBlueDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENo-of-v8A"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52y-H5-mnB">
-                                                <rect key="frame" x="70" y="0.0" width="60" height="60"/>
-                                                <state key="normal" image="Inverse-Icon.png"/>
-                                                <connections>
-                                                    <action selector="btnRedDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="9MQ-bG-Qdk"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-R5-xN8">
-                                        <rect key="frame" x="0.0" y="70" width="130" height="60"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-VQ-4kQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                <state key="normal" image="Grey-Icon.png"/>
-                                                <connections>
-                                                    <action selector="btnGreyDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="fXN-kg-Kwo"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-f1-m7f">
-                                                <rect key="frame" x="70" y="0.0" width="60" height="60"/>
-                                                <state key="normal" image="Black-Icon.png"/>
-                                                <connections>
-                                                    <action selector="btnBlackDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENm-6o-00d"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UJ7-hf-rv6">
+                                                <rect key="frame" x="0.0" y="0.0" width="133" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-TH-TUi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="63" height="60"/>
+                                                        <state key="normal" image="Blue-Icon.png"/>
+                                                        <connections>
+                                                            <action selector="btnBlueDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENo-of-v8A"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52y-H5-mnB">
+                                                        <rect key="frame" x="73" y="0.0" width="60" height="60"/>
+                                                        <state key="normal" image="Inverse-Icon.png"/>
+                                                        <connections>
+                                                            <action selector="btnRedDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="9MQ-bG-Qdk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4HX-R5-xN8">
+                                                <rect key="frame" x="0.0" y="70" width="133" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRB-VQ-4kQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <state key="normal" image="Grey-Icon.png"/>
+                                                        <connections>
+                                                            <action selector="btnGreyDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="fXN-kg-Kwo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-f1-m7f">
+                                                        <rect key="frame" x="70" y="0.0" width="63" height="60"/>
+                                                        <state key="normal" image="Black-Icon.png"/>
+                                                        <connections>
+                                                            <action selector="btnBlackDie:" destination="fzA-kz-5FQ" eventType="touchUpInside" id="ENm-6o-00d"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fSf-r7-OBR">
+                                                <rect key="frame" x="0.0" y="140" width="133" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpW-1l-KYS">
+                                                        <rect key="frame" x="0.0" y="20" width="84" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a8V-XP-8M6">
+                                                        <rect key="frame" x="84" y="14.5" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="btnDarkMode:" destination="fzA-kz-5FQ" eventType="valueChanged" id="QGl-An-0ZF"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -165,21 +207,23 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0CQ-m0-EvU" firstAttribute="centerX" secondItem="3NC-s7-E9g" secondAttribute="centerX" id="cxp-SK-Ls0"/>
-                            <constraint firstItem="0CQ-m0-EvU" firstAttribute="centerY" secondItem="3NC-s7-E9g" secondAttribute="centerY" id="iTf-c4-eOd"/>
+                            <constraint firstItem="wY5-ms-Z7B" firstAttribute="centerX" secondItem="3NC-s7-E9g" secondAttribute="centerX" id="AWD-Id-2wW"/>
+                            <constraint firstItem="wY5-ms-Z7B" firstAttribute="centerY" secondItem="3NC-s7-E9g" secondAttribute="centerY" id="Rzi-YN-zuG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="zN6-Tf-4p7"/>
+                    <navigationItem key="navigationItem" id="2zJ-yD-jUM"/>
                     <connections>
                         <outlet property="blackDie" destination="5wc-f1-m7f" id="Uzl-Lk-QN6"/>
                         <outlet property="blueDie" destination="KEQ-TH-TUi" id="wsB-UV-ll1"/>
+                        <outlet property="darkMode" destination="a8V-XP-8M6" id="be4-w2-Dw8"/>
                         <outlet property="greyDie" destination="nRB-VQ-4kQ" id="0nZ-gx-NkU"/>
                         <outlet property="inverseDie" destination="52y-H5-mnB" id="slb-PP-QFS"/>
+                        <outlet property="lblDarkMode" destination="rpW-1l-KYS" id="MVk-te-jiK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJL-Q9-P5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="850"/>
+            <point key="canvasLocation" x="2175" y="849"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fxi-bI-nwf">
@@ -194,7 +238,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Y6r-oV-3oO" kind="relationship" relationship="viewControllers" id="PdD-L2-NCx"/>
-                        <segue destination="fzA-kz-5FQ" kind="relationship" relationship="viewControllers" id="N85-o3-ble"/>
+                        <segue destination="k1o-Mi-k7Z" kind="relationship" relationship="viewControllers" id="N85-o3-ble"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZp-O3-CEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,6 +264,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD2-qb-G3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1425" y="52.816901408450704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3bw-vD-15D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k1o-Mi-k7Z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="zN6-Tf-4p7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="LbO-6B-QNO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.3030107319" green="0.55850988629999998" blue="0.88632702829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fzA-kz-5FQ" kind="relationship" relationship="rootViewController" id="TfD-5a-wsX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRc-NA-X1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="849"/>
         </scene>
     </scenes>
     <resources>
